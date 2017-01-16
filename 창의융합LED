@@ -4,7 +4,7 @@
 	"firmware":"1.1.103",
 	"javascriptURL":"js/led.js",
 	"blockSpecs": [               
-		["w", "set D-LED Pin %n 세그먼트 %d.digital","runDigital", "D1", "ON",
+		["w", "set D-LED Pin %d.n 세그먼트 %m.digital","runDigital", "D1", "ON",
  	  {"encode":"{d0}{d1}","setup":"\tpinMode({0},OUTPUT);\n","inc":"","def":"","work":"digitalWrite({0},{1});\n","loop":""}],
 	"menus": {
 	  "digital":["ON", "OFF"],
