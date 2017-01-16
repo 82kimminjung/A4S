@@ -1,6 +1,6 @@
 {
     "extensionName": "LED",
-    "extensionPort": 9000,
+    "extensionPort": 12345,
     "blockSpecs": [
       ["r", "slider","slider"],
       ["r", "brightness", "brightness"],
