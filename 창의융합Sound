@@ -18,7 +18,7 @@
       [" ", "motor %m.servoPins off","servodetach","D7"]
     ],
     "menus": {
-      "outDPins": ["D10","D11","D13"],
+      "outDPins": ["D2","D3","D14,"D5","D6","D7","D8","D9","D10","D11","D12","D13"],
       "outAPins": ["D5","D6"],
       "servoPins": ["D7","D8","D12"],
       "inAPins": ["A0", "A1", "A2", "A3"],
