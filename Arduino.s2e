@@ -1,4 +1,4 @@
-{	"extensionName": "A4S (Arduino For Scratch)",
+{	"extensionName": "창의융합Arduino",
 	"extensionPort": 12345,
 	"blockSpecs": [
 //		[" ", "set pin %n high", "pinHigh", 13],
