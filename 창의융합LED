@@ -1,5 +1,5 @@
 {	"extensionName": "창의융합LED",
-	"sort":31,
+	"sort":1,
 	"extensionPort": 12345,
 	"firmware":"1.1.101",
 	"javascriptURL":"js/led.js",
