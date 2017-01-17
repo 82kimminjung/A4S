@@ -1,6 +1,6 @@
 {	"extensionName": "창의융합LED",
 	"sort":1,
-	"extensionPort": 12345,
+	"extensionPort": 5417,
 	"firmware":"1.1.103",
 	"javascriptURL":"js/led.js",
 	"blockSpecs": [
