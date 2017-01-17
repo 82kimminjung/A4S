@@ -1,4 +1,4 @@
-{	"extensionName": "창의융합Arduino",
+{	"extensionName": "창의융합LEDPIN",
 	"extensionPort": 12345,
 	"blockSpecs": [
 		[" ", "세그먼트 핀 번호 %n as %m.mode", "pinMode", 2, "Digital Input"],
