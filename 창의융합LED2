@@ -2,8 +2,7 @@
 	"extensionPort": 12345,
 	"blockSpecs": [		
 			[" ", "LED PIN %n %m.highLow", "digitalWrite", 13, "ON"],	],	
-	"menus": {
-		"mode": ["Digital Input", "Digital Output","Analog Input","Analog Output(PWM)","Servo"],
+	"menus": {		
 		"highLow": ["ON", "OFF“],
 	},
 }
