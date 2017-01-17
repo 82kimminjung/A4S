@@ -4,8 +4,7 @@
 	"firmware":"1.1.103",
 	"javascriptURL":"js/led.js",
 	"blockSpecs": [
-		["w", "LED Pin %d.DPin D Value %m.highLow","digitalWrite", "D1", "high",
-		{"encode":"{d0}{d1}","setup":"pinMode(LEDPin_{0},OUTPUT);\n","inc":"","def":"int LEDPin_{0}={0};\n","work":"digitalWrite(LEDPin_{0},{1});\n","loop":""}]
+		["w", "LED Pin D %d.DPin Value %m.highLow","digitalWrite", "1", "high"],		
 	],
 	"menus": {
 	  "mode": ["Digital Input", "Digital Output"],
