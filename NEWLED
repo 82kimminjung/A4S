@@ -1,5 +1,8 @@
-{	"extensionName": "창의융합LED",
+{	"extensionName": "창의융합NEWLED",
+	"sort":1,
 	"extensionPort": 12345,
+	"firmware":"1.1.103",
+	"javascriptURL":"js/led.js",
 	"blockSpecs": [	
 		[" ", "LED PIN %n.DPin %m.highLow", "digitalWrite", 13, "high"], ],
 	"menus": {
