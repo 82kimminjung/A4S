@@ -1,19 +1,22 @@
 {	"extensionName": "창의융합NEWLED",
+	"sort":1,
 	"extensionPort": 12345,
-	"blockSpecs": [	
-		[" ", "LED PIN %d.DPin %m.LEDstate", "runDigital","D1", "ON,
-    {"encode":"{d0}{d1}","setup":"\tpinMode({0},OUTPUT);\n","inc":"","def":"","work":"digitalWrite({0},{1});\n","loop":""}]
-    ],
-    
-"menus": {
-	  "LEDstate":["ON", "OFF"],		
+	"firmware":"1.1.103",
+	"javascriptURL":"js/led.js",
+	"blockSpecs": [
+		["w", "LED Pin %d.DPin Value %m.LEDValue","runDigital", "D1", "ON",
+		{"encode":"{d0}{d1}","setup":"pinMode(LEDPin_{0},OUTPUT);\n","inc":"","def":"int LEDPin_{0}={0};\n","work":"digitalWrite(LEDPin_{0},{1});\n","loop":""}]
+	],
+	"menus": {
+	  "LEDValue":["ON", "OFF"],
+		"APin":["A0","A1","A2","A3","A4","A5","A6","A7"],
 		"DPin":["D0","D1","D2","D3","D4","D5","D6","D7","D8","D9","D10","D11","D12","D13"]
 			},
-	"values":{		
+	"values":{
+		"A0":0,"A1":1,"A2":2,"A3":3,"A4":4,"A5":5,"A6":6,"A7":7,
   	"D1":1,"D2":2,"D3":3,"D4":4,"D5":5,"D6":6,"D7":7,"D8":8,"D9":9,"D10":10,"D11":11,"D12":12,"D13":13,
   	"ON":1, "OFF":0
 	},
 	"translators":{
 	}
-  
 }
