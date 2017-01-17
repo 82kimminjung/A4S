@@ -9,7 +9,7 @@
 	//	["r", "알날로그 핀 값 %n", "analogRead", 0],
 	],
 	"menus": {
-		"mode": ["Digital Input", "Digital Output","Analog Input","Analog Output(PWM)","Servo"],
+		"mode": ["Digital Input", "Digital Output"],
 		"highLow": ["ON", "OFF"],
 	},
 }
