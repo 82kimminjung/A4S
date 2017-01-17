@@ -1,8 +1,0 @@
-{	"extensionName": "창의융합Arduino",
-	"extensionPort": 12345,
-	"blockSpecs": [		
-			[" ", "LED PIN %n %m.highLow", "digitalWrite", 13, "ON"],	],	
-	"menus": {		
-		"highLow": ["ON", "OFF“],
-	},
-}
