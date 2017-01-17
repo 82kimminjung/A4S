@@ -2,7 +2,7 @@
 	"extensionPort": 12345,
 	"blockSpecs": [
 	//	[" ", "세그먼트 핀 번호 %n as %m.mode", "pinMode", 2, "Digital Input"],
-		[" ", "LED PIN %n %m.highLow", "digitalWrite", 13, "ON"],
+		[" ", "LED PIN %n %m.highLow", "digitalWrite", 13, "high"],
 	//	[" ", "아날로그 핀 번호 %n value %n", "analogWrite", 3, 255],
 	//	[" ", "서브모터 핀 번호 %n degrees %n", "servoWrite", 5, 180],
 	//	["b", "디지털 핀 값 %n", "digitalRead", 2],
@@ -10,6 +10,6 @@
 	],
 	"menus": {
 	         "mode": ["Digital Input", "Digital Output"],
-		"highLow": ["ON", "OFF"],
+		"highLow": ["high", "low"],
 	},
 }
