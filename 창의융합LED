@@ -1,8 +1,8 @@
-{	"extensionName": "창의융합LEDPIN",
+{	"extensionName": "창의융합LED",
 	"extensionPort": 12345,
 	"blockSpecs": [
 		[" ", "세그먼트 핀 번호 %n as %m.mode", "pinMode", 2, "Digital Input"],
-		[" ", "LED PIN %n %m.highLow", "digitalWrite", 13, "high"],
+		[" ", "LED PIN %n %m.highLow", "digitalWrite", 13, "ON],
 		[" ", "아날로그 핀 번호 %n value %n", "analogWrite", 3, 255],
 		[" ", "서브모터 핀 번호 %n degrees %n", "servoWrite", 5, 180],
 		["b", "디지털 핀 값 %n", "digitalRead", 2],
@@ -10,6 +10,6 @@
 	],
 	"menus": {
 		"mode": ["Digital Input", "Digital Output","Analog Input","Analog Output(PWM)","Servo"],
-		"highLow": ["high", "low"],
+		"highLow": ["ON", "OFF"],
 	},
 }
