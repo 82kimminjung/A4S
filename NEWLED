@@ -4,13 +4,13 @@
 	"firmware":"1.1.103",
 	"javascriptURL":"js/led.js",
 	"blockSpecs": [	
-		[" ", "LED PIN D %d.SPin %m.highLow", "digitalWrite", D1, "high",
-		{"encode":"{d0}{d1}","setup":"pinMode(LEDPin_{0}, OUTPUT);\n","inc":"","def":"int LEDPin_{0}={0};\n","work":"digitalWrite(LEDPin_{0},{1});\n","loop":""}]
+		[" ", "LED PIN D %d.SPin %m.highLow", "digitalWrite", "D1", "high",
+		{"encode":"{d0}{d1}","setup":"pinMode(LEDPin_{0},OUTPUT);\n","inc":"","def":"int LEDPin_{0}={0};\n","work":"digitalWrite(LEDPin_{0},{1});\n","loop":""}]
 		],
 	"menus": {
 	        "mode": ["Digital Input", "Digital Output"],
 		"highLow": ["high", "low"],
-           "SPin":["S2","S3","S4","S5","S6","S7","S8","S9","S10","S11","S12","S13"]
+                 "SPin":["S2","S3","S4","S5","S6","S7","S8","S9","S10","S11","S12","S13"]
 	},
 	"values":{	
   	"S2":2,"S3":3,"S4":4,"S5":5,"S6":6,"S7":7,"S8":8,"S9":9,"S10":10,"S11":11,"S12":12,"S13":13
