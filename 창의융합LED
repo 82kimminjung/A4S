@@ -8,8 +8,7 @@
 	//	["b", "디지털 핀 값 %n", "digitalRead", 2],
 	//	["r", "알날로그 핀 값 %n", "analogRead", 0],
 	],
-	"menus": {
-		"mode": ["Digital Input", "Digital Output"],
+	"menus": {	
 		"highLow": ["ON", "OFF"],
 	},
 }
