@@ -1,5 +1,5 @@
 {	"extensionName": "창의융합Arduino",
-	"extensionPort": 50209,
+	"extensionPort": 9600,
 	"blockSpecs": [
 //		[" ", "세그먼트 핀 번호 %n high", "pinHigh", 13],
 //		[" ", "세그먼트 핀 번호 %n low", "pinLow", 13],
