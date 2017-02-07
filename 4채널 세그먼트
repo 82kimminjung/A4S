@@ -1,0 +1,39 @@
+{	"extensionName": "4채널 세그먼트",
+	"sort":34,
+	"extensionPort": 12345,
+	"firmware":"1.1.101",
+	"javascriptURL":"js/4CH_Segment.js",
+	"blockSpecs": [
+		["w", "Set 4CH Segment Position Pin %d.DPin %d.DPin %d.DPin %d.DPin","set4CHPositionPin", "D1","D2","D3","D4",
+		{"encode":"{d0}{s1}{s2}{s3}","setup":"for(int i=0;i<4;i++){\npinMode(position_Pin[i], OUTPUT);\n}\n","inc":"","def":"int position_Pin[]={{0},{1},{2},{3}};\n","work":"","loop":""}],
+		
+		["w", "Set 4CH Segment Segment Pin a%d.DPin b%d.DPin c%d.DPin d%d.DPin e%d.DPin f%d.DPin g%d.DPin DP%d.DPin","set4CHSegmentPin","D5", "D6","D7","D8","D9","D10","D11","D12",
+		{"encode":"{d0}{s1}{s2}{s3}{s4}{s5}{s6}{s7}{s8}","setup":"for(int i=0;i<8;i++){\npinMode(segment_Pin[i], OUTPUT);\n}\n","inc":"","def":"int segment_Pin[]={{0},{1},{2},{3},{4},{5},{6},{7}};\n","work":"","loop":""}],
+
+		["w", "Set 4CH Segment Position %d.Position Number %d.segValue","change4CHNum", 1, 0,
+		{"encode":"{d0}{d1}{d2}","setup":"","inc":"","def":"\\4ChsegNum\n","work":"DisplayNum({0},{1});\n","loop":""}],
+
+		["w", "Set 4CH Segment Position %d.Position SegmentNumber %d.SegNum Value %d.OnOff","set4CHsegChange", 1, "a", "ON",
+		{"encode":"{d0}{s1}{s2}{s3}","setup":"","inc":"","def":"\\4ChsegChange\n","work":"change_segment({0},{1},{2});\n","loop":""}],
+		
+		["w", "Set 4CHPosition %d.Position Value %d.OnOff","set4CHall",1, "ON",
+		{"encode":"{d0}{s1}{s2}{s3}","setup":"","inc":"","def":"","work":"digitalWrite(position_pin[{0}],{1});\n","loop":""}],
+		
+	],
+	"menus": {
+		"APin":["A0","A1","A2","A3","A4","A5","A6","A7"],
+		"DPin":["D0","D1","D2","D3","D4","D5","D6","D7","D8","D9","D10","D11","D12","D13"],
+		"Position":[1,2,3,4],
+		"segValue":[0,1,2,3,4,5,6,7,8,9],
+		"SegNum":["a","b","c","d","e","f","g","DP"],
+		"AllOnOff":["ON","OFF"]
+	},
+	"values":{
+	  "ON":0xff,"OFF":0x00,
+    "a":0,"b":1,"c":2,"d":3,"e":4,"f":5,"g":6,"DP":7,
+		"A0":0,"A1":1,"A2":2,"A3":3,"A4":4,"A5":5,"A6":6,"A7":7,
+  	"D1":1,"D2":2,"D3":3,"D4":4,"D5":5,"D6":6,"D7":7,"D8":8,"D9":9,"D10":10,"D11":11,"D12":12,"D13":13
+	},
+	"translators":{
+	}
+}
