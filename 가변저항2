@@ -1,4 +1,4 @@
-{	"extensionName": "CODEino - Arduino",
+{	"extensionName": "가변저항",
 	"extensionPort": 12345,
 	"blockSpecs": [
 //		[" ", "set pin %n high", "pinHigh", 13],
@@ -9,7 +9,7 @@
 //		[" ", "Digital write pin %n to %m.highLow", "digitalWrite", 13, "high"],
 //		[" ", "Analog write pin %n to %n", "analogWrite", 11, 0],
 //		["b", "digital read pin %n", "digitalRead", "2"],
-		["r", "Analog read pin %n", "analogRead", 0],
+		["r", "%n 의 가변저항 값", "analogRead", 0],
 	],
 	"menus": {
 		"inputOutput": ["input", "output", "pwm"],
