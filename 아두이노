@@ -1,0 +1,50 @@
+{	"extensionName": "아두이노",
+	"sort":1,
+	"extensionPort": 12345,
+	"firmware":"1.1.101",
+	"javascriptURL":"js/arduino.js",
+	"blockSpecs": [
+		["h","Arduino Program","runArduino"],
+		
+	
+		["B", "read digital pin %d.DPin","getDigital","D9",
+		{"encode":"{d0}","setup":"pinMode({0},INPUT);\n","inc":"","def":"","work":"digitalRead({0})","loop":""}],
+		
+		["R", "read analog pin %d.APin","getAnalog","A0",
+		{"encode":"{d0}","setup":"pinMode({0},INPUT);\n","inc":"","def":"","work":"analogRead({0})","loop":""}],
+		
+		["R", "read pulse pin %d.DPin timeout %n","getPulse","D13", 20000,
+		{"encode":"{d0}","setup":"pinMode({0},INPUT);\n","inc":"","def":"","work":"pulseIn({0},HIGH,{1})","loop":""}],
+		
+		["w", "set Digital pin %d.DPin output as %d.digital","runDigital", "D9", "HIGH",
+		{"encode":"{d0}{d1}","setup":"pinMode({0},OUTPUT);\n","inc":"","def":"","work":"digitalWrite({0},{1});\n","loop":""}],
+		
+		["w", "set pwm pin %d.DPin output as %d.pwmvalue","runPwm", "D5", 0,
+		{"encode":"{d0}{d1}","setup":"pinMode({0},OUTPUT);\n","inc":"","def":"","work":"analogWrite({0},{1});\n","loop":""}],
+		
+		["w", "set Anlaog pin %d.APin output as %n","runAnalog", "A5", 0,
+		{"encode":"{d0}{d1}","setup":"pinMode({0},OUTPUT);\n","inc":"","def":"","work":"analogWrite({0},{1});\n","loop":""}],
+
+	],
+	"menus": {
+		"beats":["500","250","125","1000","2000","0"],
+		"APin":["A0","A1","A2","A3","A4","A5","A6","A7"],
+		"DPin":["D0","D1","D2","D3","D4","D5","D6","D7","D8","D9","D10","D11","D12","D13"],
+		"servovalue":["0","45","90","135","180"],
+		"pwmvalue":["0","50","100","150","255"],
+		"digital":["HIGH","LOW"],
+		"Mode":["INPUT","OUTPUT","PWM"],
+	},
+	"values":{
+		"A0":0,"A1":1,"A2":2,"A3":3,"A4":4,"A5":5,"A6":6,"A7":7,
+  	"D1":1,"D2":2,"D3":3,"D4":4,"D5":5,"D6":6,"D7":7,"D8":8,"D9":9,"D10":10,"D11":11,"D12":12,"D13":13,
+		"run":2,
+		"get":1,
+		"digital":30,
+		"analog":31,
+		"pwm":32,
+		"HIGH":1,"LOW":0,
+	},
+	"translators":{
+	}
+}
