@@ -4,7 +4,7 @@
 	"firmware":"1.1.101",
 	"javascriptURL":"js/Potentiometer.js",
 	"blockSpecs": [
-		["R", "%d.APin의 가변저항 값","getPotention", "A0",
+		["R", "%d.APin 의 가변저항 값","getPotention", "A0",
 		{"encode":"{d0}{s1}","setup":"","inc":"","def":"int PotentiometerPin_{0}={0};\n","work":"analogRead(PotentiometerPin_{0})","loop":""}]
 	],
 	"menus": {
