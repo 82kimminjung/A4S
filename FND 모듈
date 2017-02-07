@@ -1,0 +1,41 @@
+{	"extensionName": "FND 모듈",
+	"sort":37,
+	"extensionPort": 12345,
+	"firmware":"1.1.101",
+	"javascriptURL":"js/FNDModules.js",
+	"blockSpecs": [
+		["w", "Set FND Module CLK Pin %d.DPin DIO %m.PWMPin","FNDPin", "D2","D3",
+		{"encode":"{d0}{d1}","setup":"","inc":"#include<TM1637.h>\n","def":"#define CLK {0}\n#define DIO {1}\n","work":"tm1637.init();\ntm1637.set();\n","loop":""}],
+		
+		["w", "FND Clear Display","FNDModuleClear",
+		{"encode":"{d0}{s1}","setup":"","inc":"","def":"","work":"tm1637.clearDisplay();\n","loop":""}],
+		
+		["w", "FND Display %d.fndValue","FNDValue", 1234,
+		{"encode":"{d0}{s1}","setup":"","inc":"","def":"int8_t TimeDisp[] = {0x00,0x00,0x00,0x00};\n","work":"TimeDisp = {0};\ntm1637.display(TimeDisp);\n","loop":""}],
+		
+		["w", "FND Point %d.POINTONOFF","FNDPoint", "ON",
+		{"encode":"{d0}{s1}","setup":"","inc":"","def":"","work":"tm1637.point({1});\n","loop":""}],
+		
+		["w", "FND Display Position %d.FNDposi %d.FNDPosiVal","FNDPosiValue", 0, 1,
+		{"encode":"{d0}{s1}","setup":"","inc":"","def":"","work":"tm1637.display({0},{1});\n","loop":""}],
+		
+		["w", "FND Display Position %d.FNDposi OFF","FNDPosiOFF", 0,
+		{"encode":"{d0}","setup":"","inc":"","def":"","work":"tm1637.display({0},0x7f);\n","loop":""}],
+
+	],
+	"menus": {
+		"DPin":["D0","D1","D2","D3","D4","D5","D6","D7","D8","D9","D10","D11","D12","D13"],
+		"PWMPin":["D3","D5","D6","D9","D10","D11"],
+		"FNDposi":[0,1,2,3],
+		"FNDPosiVal":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+		"POINTONOFF":["ON","OFF"]
+	},
+	"values":{
+	  "ON":1, "OFF":0,
+    "a":0,"b":1,"c":2,"d":3,"e":4,"f":5,"g":6,"DP":7,
+		"A0":0,"A1":1,"A2":2,"A3":3,"A4":4,"A5":5,"A6":6,"A7":7,
+  	"D1":1,"D2":2,"D3":3,"D4":4,"D5":5,"D6":6,"D7":7,"D8":8,"D9":9,"D10":10,"D11":11,"D12":12,"D13":13
+	},
+	"translators":{
+	}
+}
